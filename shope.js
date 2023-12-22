@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="product-details">
                     <span class="product-catagory">${response[i].category}</span>
-                    <h4><a href="">${
+                    <h4><a href="#prodact?id=${response[i].id}">${
                         title.length > 18 ? title.substring(0, 18).concat(' ...') : title
                       }</a></h4>
                     <div class="product-bottom-details">
