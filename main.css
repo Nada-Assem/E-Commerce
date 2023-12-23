@@ -1088,3 +1088,16 @@ a
         margin: 20px auto;
     }
 }
+
+section.aside-cart{
+    background-color: #f0f5f7;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section.aside-cart>*{
+    padding-right: 0; 
+    padding-left: 0;
+}
+.price.aside-cart,.delete.aside-cart{
+    color:rgb(245 35 35);
+}
