@@ -79,7 +79,7 @@
   .open.shop{
     transform: translateX(-10px);
   }
-:root.shop{
+:root{
     --first-color: #f44336;
     --primary-color: #5B00B7;
   }

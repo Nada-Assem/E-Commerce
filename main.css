@@ -290,12 +290,6 @@ button , input{
     margin-top: 8rem;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
-*.shop{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
   
   .color-option.shop{
     height: 20px;
@@ -370,7 +364,7 @@ button , input{
   .open.shop{
     transform: translateX(-10px);
   }
-:root.shop{
+:root{
     --first-color: #f44336;
     --primary-color: #5B00B7;
   }
