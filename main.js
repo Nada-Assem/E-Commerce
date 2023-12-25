@@ -2,7 +2,7 @@
 const renderHome = Handlebars.compile(document.getElementById("home-template").innerHTML);
 const renderShop = Handlebars.compile(document.getElementById("shop-template").innerHTML);
 const renderCart = Handlebars.compile(document.getElementById("cart-template").innerHTML);
-const renderBlog = Handlebars.compile(document.getElementById("blog-template").innerHTML);
+// const renderBlog = Handlebars.compile(document.getElementById("blog-template").innerHTML);
 const renderFaq = Handlebars.compile(document.getElementById("faq-template").innerHTML);
 const renderContact = Handlebars.compile(document.getElementById("contact-template").innerHTML);
 const renderProduct = Handlebars.compile(document.getElementById("product-template").innerHTML);
@@ -23,6 +23,7 @@ function HandleNavigation() {
     switch (hash) {
         case "#home":
             renderContent(renderHome(), "content");
+            load('home.js')
             break;
         case "#shop":
             renderContent(renderShop(), "content");
@@ -30,10 +31,11 @@ function HandleNavigation() {
             break;
         case "#cart":
             renderContent(renderCart(), "content");
+            load('cart.js')
             break;
-        case "#blog":
-            renderContent(renderBlog(), "content");
-            break;
+        // case "#blog":
+        //     renderContent(renderBlog(), "content");
+        //     break;
         case "#contact":
             renderContent(renderContact(), "content");
             break;
@@ -151,3 +153,89 @@ function deleteItem(item){
 window.addEventListener("load", HandleNavigation);
 window.addEventListener("hashchange", HandleNavigation);
 listCartItems()
+const login = document.getElementById('login'),
+loginButton = document.getElementById('login-button'),
+closeIcon = document.getElementById('login-close')
+if(loginButton){
+  loginButton.addEventListener("click" , ()=>{
+    login.classList.add('show-login')
+  })
+}
+
+if(closeIcon){
+  closeIcon.addEventListener("click" , ()=>{
+    login.classList.remove('show-login')
+  })
+}
+
+function Login() {
+const login = document.getElementById('login'),
+logout = document.getElementById('logout'),
+iconLog = document.getElementById('login-button');
+  var username = document.getElementById('loginUsername').value;
+  var password = document.getElementById('loginPassword').value;
+
+  // Mock user authentication using local storage
+  var savedUser = JSON.parse(localStorage.getItem(username));
+
+  if (savedUser && savedUser.password === password) {
+      alert('Login successful!');
+      login.classList.remove('show-login')
+      iconLog.style.display='none';
+      logout.style.display='block';
+  } else {
+      alert('Invalid credentials. Please try again.');
+  }
+}
+// =======================Register================================
+
+function res(){
+  const register = document.getElementById('register'),
+  registerButton = document.getElementById('cRes'),
+  close = document.getElementById('register-close'),
+  login = document.getElementById('login');
+
+  if(registerButton){
+    registerButton.addEventListener("click" , ()=>{
+      register.classList.add('show-register')
+      login.classList.remove('show-login')
+    })
+  }
+
+  if(close){
+    close.addEventListener("click" , ()=>{
+      register.classList.remove('show-register')
+    })
+  }
+}
+
+function register() {
+  const register = document.getElementById('register'),
+  login = document.getElementById('login');
+  var username = document.getElementById('registerUsername').value;
+  var password = document.getElementById('registerPassword').value;
+
+  // Mock user registration using local storage
+  if (!localStorage.getItem(username)) {
+      var newUser = { username: username, password: password };
+      localStorage.setItem(username, JSON.stringify(newUser));
+      register.classList.remove('show-register')
+      alert('Registration successful!');
+      login.classList.add('show-login');
+  } else {
+      alert('Username already exists. Please choose a different username.');
+  }
+}
+
+function logout() {
+  
+  var userName = document.getElementById('loginUsername').value,
+  pass = document.getElementById('loginPassword').value,
+  logout = document.getElementById('logout'),
+  login= document.getElementById('login-button');
+  
+  localStorage.removeItem(userName);
+  localStorage.removeItem(pass);
+  logout.style.display='none';
+  login.style.display = 'block'
+}

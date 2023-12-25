@@ -1472,3 +1472,24 @@ text-decoration:none ;
 section.home{
   padding: 7rem 0 2rem;
 }
+*{
+  margin: 0;
+  
+}
+.red-color{
+  color:red;
+}
+.theheader{
+  width:100%;
+ text-align: center;
+}
+.para1{
+  font-size:larger;
+  font-weight: bold;
+}
+.cart_container{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

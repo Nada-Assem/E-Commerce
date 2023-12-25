@@ -42,11 +42,11 @@
                             Cart
                         </a>
                     </il>
-                    <il class="nav_item">
+                    <!-- <il class="nav_item">
                         <a href="#blog" class="nav_link">
                             Blog
                         </a>
-                    </il>
+                    </il> -->
                     <il class="nav_item">
                         <a href="#faq" class="nav_link">
                             Faq's
@@ -556,11 +556,39 @@
         </section>    
      </script>
     <script id="cart-template" type="text/template">
-        here is the cart page content
+        <div class="theheader">
+            <h1>Card Page</h1>
+            <i
+              class="fa-solid fa-xmark"
+              style="
+                font-size: 2rem;
+                color: black;
+                position: absolute;
+                top: 1.25rem;
+                right: 0.9rem;
+                cursor: pointer;
+              "
+            ></i>
+            <p class="para1">
+              home<span> &gt; </span> <span class="red-color"> card</span>
+            </p>
+          </div>
+         
+        <!--end of the first div-->
+        <div class="cart">
+        
+            <div class="cart_container" id="cart_container">
+                <div class="all_cart_container"></div>
+                <div class="theRightDiv">
+        
+                </div>
+            </div>
+            
+        </div>
     </script>
-    <script id="blog-template" type="text/template">
+    <!-- <script id="blog-template" type="text/template">
         here is the blog page content
-    </script>
+    </script> -->
     <script id="faq-template" type="text/template">
         <h3 class="shop breadcrum_title">FAQ'S Page</h3>
         <p class="shop breadcrum_subtitle">Home <span class="shop"> > FAQ'S</span></p>
