@@ -613,25 +613,17 @@ section{
     margin-bottom: var(--mb-2);
 }
 
-/* =============Scroll up========== */
-/* .scrollup{
-    position: fixed;
-    right: 1rem;
-    bottom: 3rem;
-    background-color: var(--link-color);
-    border-radius: .4rem;
-    display: inline-flex;
-    padding: .25rem;
-    z-index: var(--z-tooltip);
-    opacity: 0;
-    transition: .4s;
-} */
 
 
 
 /* ==========New Arrivals Section */
 .new_container{
-    padding-top: 1rem;
+    padding-top: 2rem;
+    background-color: var(--container-color);
+    padding: 2rem 2rem ;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
 }
 
 .new_img{
@@ -649,16 +641,6 @@ section{
     text-align: center;
     overflow: hidden;
     flex: 1;
-}
-
-.new_tag{
-    position: absolute;
-    top: 8%;
-    left: 8%;
-    background-color: var(--link-color);
-    font-size: var(--small-font-size);
-    padding:  .25rem .5rem;
-    border-radius: .25rem;
 }
 
 .new_title{
@@ -693,7 +675,6 @@ section{
     display: inline-flex;
     padding: .5rem ;
     border-radius: .25rem .25rem .75rem .25rem ;
-    position: absolute;
     bottom: 0;
     right:-4rem;
 }
