@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="datails.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<html>
+
+<head>
+    <title>Image Details</title>
+
+</head>
+
+<body class="detailsBody">
+    <h3 class="DetailsTitle" >Details Page</h3>
+    <h2 class="DetailsSubtitle">Home ><span style="color: orange;"> Details</span></h2>
+    <header class="detailsheader">
+        
+        <div><img id="image" src="" alt="Image" style="width: 200px;"></div>
+    </header>
+    <div class=" product-details">
+        <h4 id="title"></h4>
+        <span id="category"></span>
+        <div class="rating">
+            <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+            </div>
+            <span class="reviews__count">40 + Reviews</span>
+        </div>
+        <div id="price" class="product-price-details"></div>
+        <button onclick="addToCart()" class="add-to-cart-btn detailsCart">Add to Cart</button>
+    </div>
+
+    <script src="detals.js"></script>
+</body>
+
+</html>
