@@ -121,7 +121,7 @@ section{
 
 
 /* ---------------- Layout-------- */
-.container{
+.container.home{
     padding-top: 15px;
     max-width: 968px;
     margin-left: auto;
@@ -465,7 +465,7 @@ section{
 
 /* ====================Main================= */
 /* ----------------Home Section----------------- */
-.home {
+.homemain {
     width: 100%;
     overflow: hidden;
 }

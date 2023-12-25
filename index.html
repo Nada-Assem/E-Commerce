@@ -8,7 +8,9 @@
     <script src="./handlebars.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='./main.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -63,9 +65,10 @@
                 </div>
 
                 <div class="nav_shop" id="cart-shop">
-                    <button  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bx bx-shopping-bag"></i></button>
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"><i class="bx bx-shopping-bag"></i></button>
 
-                    
+
                 </div>
 
                 <div class="nav_taggle" id="nav-toggle">
@@ -77,13 +80,13 @@
     </header>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <h4 class="text-center ">My Cart</h4>
-        <!-- <section class="aside-cart row p-4">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h4 class="text-center ">My Cart</h4>
+            <!-- <section class="aside-cart row p-4">
             <img class="col-5 img-fluid" src="./pyramid-logo-vector-icon-2950338.jpg" alt="" srcset="">
             <div class="col-5">
                 <h6>Lorem ipsum dolor</h6>
@@ -94,7 +97,7 @@
             </div>
             <button class="col-1 delete aside-cart" style="align-self: flex-end;">&</button>
         </section> -->
-      </div>
+        </div>
     </div>
     <div id="content"></div>
     <!--------------- Footer------------>
@@ -157,7 +160,183 @@
         </span>
     </footer>
     <script id="home-template" type="text/template">
-        here is the home page content
+        <main class="main">
+            <section class="homemain container home">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class=" home">
+                    <div class="home-slider">
+                        <!-- Home slide 1 -->
+                        <section class="slide home">
+                            <div class="home_content grid">
+                                <div class="home_group">
+                                    <img src="./Cardigan.png" alt="" class="home_img">
+                                    <div class="home_indicator"></div>
+                                    <div class="home_details-img">
+                                        <h4 class="home_details-title">The "Cardigan"</h4>
+                                        <span class="home_details-subtitle">Woolen</span>
+                                    </div>
+                                </div>
+        
+                                <div class="home_data">
+                                    <h3 class="home_subtitle">#1 TRENDING ITEM</h3>
+                                    <h1 class="home_title">
+                                        ORIGINAL<br> IS NEVER <br> FINISHED! ! 
+                                    </h1>
+                                    <p class="home_description">
+                                        This is a place of hope, meaning and purpose, Visit and become a part of something bigger - a movement that is
+                                        changing lives,
+                                    </p>
+                                    <div class="home_buttons">
+                                        <a href="#" class="button">Buy NOW</a>
+                                        <a href="#" class="button-link button-flex">View Details
+                                            <i class="bx bx-right-arrow-alt button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+        
+                        <!-- Home slide 2 -->
+                        <section class="slide home">
+                            <div class="home_content grid">
+                                <div class="home_group">
+                                    <img src="./suit.jpg" alt="" class="home_img">
+                                    <div class="home_indicator"></div>
+                                    <div class="home_details-img">
+                                        <h4 class="home_details-title">Jqueezy</h4>
+                                        <span class="home_details-subtitle">Ski Suit</span>
+                                    </div>
+                                </div>
+        
+                                <div class="home_data">
+                                    <h3 class="home_subtitle">#2 top best duo</h3>
+                                    <h1 class="home_title">
+                                        FALL<br> WINTER <br> 2023
+                                    </h1>
+                                    <p class="home_description">
+                                        A specialist label creating luxury essentials.
+                                        Ethically crafted with an unwavering to exceptional quality.
+                                    </p>
+                                    <div class="home_buttons">
+                                        <a href="#" class="button">Buy NOW</a>
+                                        <a href="#" class="button-link button-flex">View Details
+                                            <i class="bx bx-right-arrow-alt button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+        
+                <!-- Home slide 3 -->
+                        <section class="slide home">
+                            <div class="home_content grid">
+                                <div class="home_group">
+                                    <img src="./3.jpg" alt="" class="home_img">
+                                    <div class="home_indicator"></div>
+                                    <div class="home_details-img">
+                                        <h4 class="home_details-title">T-shirt</h4>
+                                        <span class="home_details-subtitle">cotton</span>
+                                    </div>
+                                </div>
+        
+                                <div class="home_data">
+                                    <h3 class="home_subtitle">#3 TRENDING ITEM</h3>
+                                    <h1 class="home_title">
+                                        SALE 20%<br> OFF ON  <br> EVERYTHING 
+                                    </h1>
+                                    <p class="home_description">
+                                        A specialist label creating luxury essentials.
+                                        Ethically crafted with an unwavering to exceptional quality.
+                                    </p>
+                                    <div class="home_buttons">
+                                        <a href="#" class="button">Buy NOW</a>
+                                        <a href="#" class="button-link button-flex">View Details
+                                            <i class="bx bx-right-arrow-alt button_icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>                   
+                    </div>
+                    </div>
+        
+                </div>
+            </section>
+            <section class="discount section home">
+                <div class="discount_container container home grid" >
+                    <img class="discount_img" src="./discount.jpg" alt="">
+        
+                    <div class="discount_data">
+                    <h2 class="discount_title">
+                        50% Discount <br> On New Products
+                    </h2>
+                    <a href="" class="button">
+                        Go to new
+                    </a>
+                </div>
+                </div>
+            </section>
+            <!------------------New Arrivals------------------- -->
+            <section class="new section home">
+                <h1 class="section_title">
+                    New Arrivals
+                </h1>
+                <div class="new_container home container">
+                <div class="row">
+                        <!-- New Content 1 -->
+                       
+                 </div>
+        
+                </div>
+            </section>
+        
+        
+            <!---------Step------------------->
+            <section id="steps section home container" class="home">
+                <div class="steps_bg">
+                    <h2 class="section_title">
+                        How to order products<br>from e-shopper
+                    </h2>
+                    <div class="steps_container grid">
+                        <!-- Step Card 1 -->
+                        <div class="steps_card">
+                            <div class="steps_card-number">01.</div>
+                            <h3 class="steps_card-title">
+                                Choose Products
+                            </h3>
+                            <p class="steps_card-description">
+                                We have several varieties products you can form.
+                            </p>
+                        </div>
+        
+                        <!-- Step Card 2 -->
+                        <div class="steps_card">
+                            <div class="steps_card-number">02.</div>
+                            <h3 class="steps_card-title">
+                                Place an order
+                            </h3>
+                            <p class="steps_card-description">
+                                Once your order is set, we move to the next step which is the shipping.
+                            </p>
+                        </div>
+        
+                        <!-- Step Card 3 -->
+                        <div class="steps_card">
+                            <div class="steps_card-number">03.</div>
+                            <h3 class="steps_card-title">
+                                    Get order delivered
+                            </h3>
+                            <p class="steps_card-description">
+                                Our delivery process is easy , you receive the order direct to your home.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </script>
     <script id="shop-template" type="text/template">
         <section class="shop">
