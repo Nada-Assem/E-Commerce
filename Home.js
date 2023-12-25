@@ -122,4 +122,50 @@ function logout() {
   login.style.display = 'block'
 }
 
+// ===============================================================================
+document.addEventListener('DOMContentLoaded', function() {
+  let products = document.querySelector('.prodacts');
+  async function fetchProducts(url) {
+      try {
+          let data = await fetch(url);
+          let response = await data.json();
+          console.log(response[1].category.image)
 
+          for (let i = 0; i < response.length; i++) {
+              let description = response[i].description;
+              let title = response[i].title;
+              products.innerHTML += `
+              
+              <div new_content">
+              <img src="${response[i].image}" class="new_img" alt="${response[i].category}">
+              <h3 class="new_title">
+              ${
+                title.length > 18 ? title.substring(0, 18).concat(' ...') : title
+              }
+                </h3>
+                <span class="new_suptitle">
+                ${response[i].category}
+                </span>
+                <div class="new_prices">
+                            <span class="new_price">${response[i].price}</span>
+                            <span class="new_discount">$29.99</span>
+                        </div>
+                        <a href="" class="button new_button">
+                            <i class="bx bx-cart-alt new_icon"></i>
+                        </a>
+          </div>
+
+     
+     `;
+          }
+      } catch (err) {
+          console.log(err);
+      }
+  }
+  fetchProducts('https://fakestoreapi.com/products?limit=3');
+});
+
+         
+                       
+                        
+           
