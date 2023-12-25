@@ -9,7 +9,7 @@ let cards=[];
 
 
 const addDataToHTML= ()=>{
-
+console.log('in add data');
     listproductHtml.innerHTML='';
     if(listProduct.length>0){
         listProduct.forEach(product =>{
@@ -199,8 +199,9 @@ listproductHtml.style.width="70%";
 }
 
     const addDataToHTML1= ()=>{
-
+console.log('in fun1')
         theRightElement.innerHTML='';
+        console.log(cards);
         if(cards.length>0){
             cards.forEach(card =>{
 
@@ -209,7 +210,7 @@ therightCart.classList.add("therightCart");
 
 const cart_total_Price=document.createElement("h2");
 cart_total_Price.classList.add("cart_total_Price"); 
-cart_total_Price.innerHTML=`<h3>${card.id}</h3>`; 
+cart_total_Price.innerHTML=`<h3></h3>`; 
 therightCart.appendChild(cart_total_Price);
 
 
@@ -222,12 +223,19 @@ therightCart.appendChild(sub_total_Card);
 const sub_total_Card1=document.createElement("span");
 sub_total_Card1.classList.add("sub_total_Card1");
 sub_total_Card1.innerText="sub-total";
+sub_total_Card1.style.fontSize="2rem";
+sub_total_Card1.style.margin="2rem";
+
 sub_total_Card.appendChild(sub_total_Card1);
 
 
 const card_price1=document.createElement("span");
 card_price1.classList.add("card_price1");
 card_price1.innerText="$48.00";
+card_price1.style.fontSize="1.5rem";
+sub_total_Card1.style.margin="2rem";
+
+
 sub_total_Card.appendChild(card_price1);
 
 
@@ -238,12 +246,16 @@ therightCart.appendChild(card_shipping);
 const card_shipping1=document.createElement("span");
 card_shipping1.classList.add("card_shipping1");
 card_shipping1.innerText="shipping";
+card_shipping1.style.fontSize="1.5rem";
+card_shipping1.style.margin="2rem";
 card_shipping.appendChild(card_shipping1);
 
 
 const card_price2=document.createElement("span");
 card_price2.classList.add("card_price2");
 card_price2.innerText="$4.99";
+card_price2.style.fontSize="1.5rem";
+card_price2.style.margin="2rem";
 card_shipping.appendChild(card_price2);
 
 
@@ -255,21 +267,35 @@ therightCart.appendChild(card_total_shipping);
 const card_total_shipping1=document.createElement("span");
 card_total_shipping1.classList.add("card_total_shipping1");
 card_total_shipping1.innerText="total";
+card_total_shipping1.style.fontSize="1.5rem";
+card_total_shipping1.style.margin="2.5rem";
 card_total_shipping.appendChild(card_total_shipping1);
 
 
 const card_price3=document.createElement("span");
 card_price3.classList.add("card_price3");
 card_price3.innerText="$50.22";
+card_price3.style.fontSize="1.5rem";
+card_price3.style.margin="2rem";
 card_total_shipping.appendChild(card_price3);
 
 
 const button_Checkout=document.createElement("button");
 button_Checkout.classList.add("button_Checkout");
 button_Checkout.innerText="checkout";
+button_Checkout.style.fontSize="1.5rem";
+button_Checkout.style.padding="15px 53px";
+button_Checkout.style.margin="2rem";
+button_Checkout.style.backgroundColor="#ef410afa";
+button_Checkout.style.border="none";
+button_Checkout.style.borderRadius="2%";
+
 therightCart.appendChild(button_Checkout);
-console.log(therightCart);
-listproductHtml.appendChild(therightCart);
+therightCart.style.backgroundColor="#8080803d";
+therightCart.style.width="100%";
+therightCart.style.textAlign="center";
+
+theRightElement.appendChild(therightCart);
 })
 }
 }
@@ -278,89 +304,6 @@ listproductHtml.appendChild(therightCart);
 
 
 
-// const addDataToHTML2= ()=>{
-
-//     theRightElement.innerHTML='';
-//     if(listProduct.length>0){
-//         listProduct.forEach(product =>{
-
-
-//  const therightCart=document.createElement("div");
-//  therightCart.classList.add("therightCart");
-
-//  const cart_total_Price=document.createElement("h2");
-//  cart_total_Price.classList.add("cart_total_Price"); 
-//  cart_total_Price.innerText="total"; 
-//  therightCart.appendChild(cart_total_Price);
- 
-
-
-//  const sub_total_Card=document.createElement("div");
-//  sub_total_Card.classList.add("sub_total_Card");
-//  therightCart.appendChild(sub_total_Card);
-
-
-//  const sub_total_Card1=document.createElement("span");
-//  sub_total_Card1.classList.add("sub_total_Card1");
-//  sub_total_Card1.innerText="sub-total";
-//  sub_total_Card.appendChild(sub_total_Card1);
-
-
-//  const card_price1=document.createElement("span");
-//  card_price1.classList.add("card_price1");
-//  card_price1.innerText="$48.00";
-//  sub_total_Card.appendChild(card_price1);
-
-
-//  const card_shipping=document.createElement("div");
-//  card_shipping.classList.add("card_shipping");
-//  therightCart.appendChild(card_shipping);
-
-//  const card_shipping1=document.createElement("span");
-//  card_shipping1.classList.add("card_shipping1");
-//  card_shipping1.innerText="shipping";
-//  card_shipping.appendChild(card_shipping1);
-
-
-//  const card_price2=document.createElement("span");
-//  card_price2.classList.add("card_price2");
-//  card_price2.innerText="$4.99";
-//  card_shipping.appendChild(card_price2);
-
-
-//  const card_total_shipping=document.createElement("div");
-//  card_total_shipping.classList.add("card_total_shipping");
-//  therightCart.appendChild(card_total_shipping);
-
-
-//  const card_total_shipping1=document.createElement("span");
-//  card_total_shipping1.classList.add("card_total_shipping1");
-//  card_total_shipping1.innerText="total";
-//  card_total_shipping.appendChild(card_total_shipping1);
-
-
-//  const card_price3=document.createElement("span");
-//  card_price3.classList.add("card_price3");
-//  card_price3.innerText="$50.22";
-//  card_total_shipping.appendChild(card_price3);
-
-
-//  const button_Checkout=document.createElement("button");
-//  button_Checkout.classList.add("button_Checkout");
-//  button_Checkout.innerText="checkout";
-//  therightCart.appendChild(button_Checkout);
-
-//  listproductHtml.appendChild(therightCart);
-
-// })
-
-// }
-
-
-
-
-
-// }
 
 
 const initAPP = ()=>{
@@ -370,10 +313,22 @@ fetch('products.json')
     listProduct=data;
     console.log(listProduct);
     addDataToHTML();
+  
 })
 }
 initAPP();
 
+const initAPP1 = ()=>{
+    fetch('cards.json')
+    .then(response =>response.json())
+    .then(data =>{
+        cards=data;
+        console.log(cards);
+        
+        addDataToHTML1();
+    })
+    }
+    initAPP1();
 
 
 
