@@ -1,0 +1,24 @@
+[
+{
+    "id":1,
+    "name":"Winderbreaker jacket",
+    "thePrice":"$12.00",
+    "theimage":"download (2).jpeg",
+    "cart_color":"Brown"
+},{
+    "id":2,
+    "name":"Cardinate Hoodies",
+    "thePrice":"$16.00",
+    "theimage":"download (2).jpeg",
+    "cart_color":"Red Mix"
+
+},
+{
+    "id":3,
+    "name":"catoon",
+    "thePrice":"$20.00",
+    "theimage":"download (2).jpeg",
+    "cart_color":"Yellow"
+
+}
+]
