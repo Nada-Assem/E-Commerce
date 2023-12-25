@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shope Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./shope.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <h3 class="shop breadcrum_title">Shope Page</h3>
+        <p class="shop breadcrum_subtitle">Home <span> > Shope</span></p>
+
+        <!-- <div id="coloSelector" class="shop group">
+            
+            <ul  class="shop color-grid">
+                
+              <li class="shop color-option is-selected" data-color="#5B00B7"></li>
+              <li class="shop color-option" data-color="#3a68b7"></li>
+              <li class="shop color-option" data-color="#34b7b0"></li>
+              <li class="shop color-option" data-color="#4f8f44"></li>
+              <li class="shop color-option" data-color="#c0582f"></li>
+              <li class="shop color-option" data-color="#a83030"></li>
+              <li class="shop color-option" data-color="#994385"></li>
+              
+            </ul>
+            <i class="shop fa-solid fa-gear" id="btn" style="font-size: 25px;"></i>
+          </div> -->
+        <div class="shop container">
+            <div class="shop row myStyle">
+                <div class="shop col-3 left">
+                    <h5 class="shop section_filter">Section Filter</h5>
+                    <div class="shop filter_item">
+                        <h6 class="shop" >Condition</h6>
+                        <div class="shop row f_se">
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>New</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(13)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Scale</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(13)</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="shop filter_item">
+                        <h6 class="shop" >Size</h6>
+                        <div class="shop row f_se">
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>S</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(13)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>M</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(13)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>L</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(13)</span>
+                        </div>
+                        
+                    </div>
+                    <div class="shop filter_item">
+                        <h6 class="shop" >Categories</h6>
+                        <div class="shop row f_se">
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Women</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(2)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Men</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(4)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Kids</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(13)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Other</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(4)</span>
+                        </div>
+                        
+                    </div>
+                    <div class="shop filter_item">
+                        <h6 class="shop" >Styles</h6>
+                        <div class="shop row f_se">
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Casual</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(2)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Dressy</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(4)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Girly</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(6)</span>
+                        </div>
+                    </div>
+                    <div class="shop filter_item">
+                        <h6 class="shop" >Sub Categories</h6>
+                        <div class="shop row f_se">
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Jackets</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(2)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>T-shirts</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(4)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Accessories</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(6)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Shoes</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(4)</span>
+                            <div class="shop col-5">
+                                <input class="shop"  type="checkbox"><span>Coats</span>
+                            </div>
+                            <span  class="shop col-2" style="padding-left: 0px;">(6)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop col-8 right">
+                    <div class="shop row productss">
+                       
+                        
+                        
+                    </div>
+                    <!-- <input type="radio" name="page" id="page1-input" checked>
+                    <input type="radio" name="page" id="page2-input">
+                    <input type="radio" name="page" id="page3-input">
+                    <input type="radio" name="page" id="page4-input">
+                    <input type="radio" name="page" id="page5-input"> -->
+<div>
+    <!-- <div class="shop content">
+      <div class="shop page page1">
+          
+      </div>
+      <div class="shop page page2">
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+      </div>
+      <div class="shop page page3">
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+      </div>
+      <div class="shop page page4">
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+      </div>
+      <div class="shop page page5">
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+        <div class="shop item"></div>
+      </div>
+    </div> -->
+    <!-- <div class="shop navigation">
+
+      <div class="shop navigation-wrapper">
+        <div class="shop arrow arrow-left">
+          <span>&lt;</span>
+          <label for="page1-input"></label>
+          <label for="page2-input"></label>
+          <label for="page3-input"></label>
+          <label for="page4-input"></label>
+          <label for="page5-input"></label>
+        </div>
+        <label class="shop nav-item nav-page1" for="page1-input">
+          <div>1</div>
+        </label>
+        <label class="shop nav-item nav-page2" for="page2-input">
+          <div>2</div>
+        </label>
+        <label class="shop nav-item nav-page3" for="page3-input">
+          <div>3</div>
+        </label>
+        <label class="shop nav-item nav-page4" for="page4-input">
+          <div>4</div>
+        </label>
+        <label class="shop nav-item nav-page5" for="page5-input">
+          <div>5</div>
+        </label>
+        <div class="shop arrow arrow-right">
+          <span>&gt;</span>
+          <label for="page1-input"></label>
+          <label for="page2-input"></label>
+          <label for="page3-input"></label>
+          <label for="page4-input"></label>
+          <label for="page5-input"></label>
+        </div>
+      </div>
+    </div> -->
+    <div id="pagination"></div>
+  </div>
+                    
+    
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="./shope.js"></script>
+<script>
+    // var btn = document.getElementById("btn");
+    // btn.addEventListener("click",()=>{
+    //     document.getElementById("coloSelector").classList.toggle("open")
+    // })
+</script>
+</body>
+</html>

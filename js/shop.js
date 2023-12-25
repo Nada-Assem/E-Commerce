@@ -1,4 +1,4 @@
-let products = document.querySelector('.productss');
+var products = document.querySelector('.productss');
 async function fetchProducts(url) {
     try {
         let data = await fetch(url);
@@ -17,11 +17,11 @@ async function fetchProducts(url) {
                 </div>
                 <div class="shop  product-details">
                     <span class="shop  product-catagory">${response[i].category}</span>
-                    <h4><a class="shop" href="#prodact?id=${response[i].id}">${title.length > 18 ? title.substring(0, 18).concat(' ...') : title
+                    <h4><a class="shop" href="#product?id=${response[i].id}">${title.length > 18 ? title.substring(0, 18).concat(' ...') : title
                 }</a></h4>
                     <div class="shop  product-bottom-details">
-                        <div onclick="console.log((function () { return this.value; })());" class="shop  product-price">${response[i].price}</div>
-                        <div class="shop  product-links">
+                        <div  class="shop  product-price">${response[i].price}</div>
+                        <div class="shop  product-links" onclick="addToCart(${response[i].id})">
                             <buttom ><i class="shop  fa fa-shopping-cart"></i></buttom>
                         </div>
                     </div>

@@ -1101,3 +1101,64 @@ section.aside-cart>*{
 .price.aside-cart,.delete.aside-cart{
     color:rgb(245 35 35);
 }
+.detailsBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.detailsheader{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.DetailsSubtitle{
+    position: absolute;
+    top: 70px;
+}
+.DetailsTitle{
+  display: flex;
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.product-details h4 {
+  text-align: center;
+}
+
+.product-price-details{
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.detailsCart {
+  background-color: #6b4caf;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#faq .show,#faq [aria-expanded='true'],#contactSendBtn{
+  background-color: #c0582f;
+  color: white;
+}
+#contact a{
+  color:#000000;
+text-decoration:none ;
+}
